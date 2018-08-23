@@ -1,0 +1,76 @@
+
+
+#custom-brand {
+  color: red;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.jumbotron {
+  background-image: asset-url('rails.jpg');
+  background-size: cover;
+  height: 550px;
+}
+
+.jumbotron {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  
+}
+
+.jumbotron h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: red;
+  text-transform: uppercase
+  font-weight bold;
+}
+
+.article-actions {
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+}
+
+.description {
+  margin-top: 0;
+  text-align: center;
+}
+
+.post-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.post-body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  
+}
+
+.footer {
+  border-top: 1px solid black;
+}
+
+.footer a:hover {
+  color: #222;
+  background-color: #fff;
+}
+
+.footer small {
+  float: left;
+}
+
+.footer nav {
+  float: right;
+}
+
+.footer li {
+  list-style: none;
+  float: left;
+  margin-left: 15px;
+}
