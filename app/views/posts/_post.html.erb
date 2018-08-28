@@ -1,0 +1,26 @@
+<% obj.each do |post| %>
+
+  <div class = 'row'>
+    <div class = 'col-xs-8 col-xs-offset-2'>
+      <div class = 'well well-lg'> 
+        
+        <div class= 'post-title'>
+          <%= link_to post.title, post_path(post) %>
+        </div> 
+        
+        <div class = 'post-body'>
+          post.description
+        </div>
+        
+          <div class = 'article-actions'>
+    
+            <%= link_to 'Edit', edit_post_path(post), class: 'btn btn-xs btn-success' %>
+            <%= link_to 'Delete', post_path(post), method: :delete, class: 'btn btn-xs btn-danger' %>
+            <%= link_to 'All articles', posts_path, class: 'btn btn-xs btn-primary' %>
+    
+         </div>
+      
+      </div>
+    </div>
+  </div>
+<% end %>
